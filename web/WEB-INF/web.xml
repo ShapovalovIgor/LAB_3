@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>startServlet</servlet-name>
+        <servlet-class>StartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>startServlet</servlet-name>
+        <url-pattern>/startServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>firstSearchServlet</servlet-name>
+        <servlet-class>searchServlets.FirstSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>firstSearchServlet</servlet-name>
+        <url-pattern>/firstSearchServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>secondSearchServlet</servlet-name>
+        <servlet-class>searchServlets.SecondSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>secondSearchServlet</servlet-name>
+        <url-pattern>/secondSearchServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>threeSearchServlet</servlet-name>
+        <servlet-class>searchServlets.ThreeSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>threeSearchServlet</servlet-name>
+        <url-pattern>/threeSearchServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>groupsServlet</servlet-name>
+        <servlet-class>entryServlets.GroupsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>groupsServlet</servlet-name>
+        <url-pattern>/groupsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>studentsServlet</servlet-name>
+        <servlet-class>entryServlets.StudentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>studentsServlet</servlet-name>
+        <url-pattern>/studentsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createGroupServlet</servlet-name>
+        <servlet-class>createServlets.CreateGroupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createGroupServlet</servlet-name>
+        <url-pattern>/createGroupServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createStudentServlet</servlet-name>
+        <servlet-class>createServlets.CreateStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createStudentServlet</servlet-name>
+        <url-pattern>/createStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createFinishStudentServlet</servlet-name>
+        <servlet-class>createServlets.CreateFinishStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createFinishStudentServlet</servlet-name>
+        <url-pattern>/createFinishStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>studentsInGroupServlet</servlet-name>
+        <servlet-class>entryServlets.StudentsInGroupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>studentsInGroupServlet</servlet-name>
+        <url-pattern>/studentsInGroupServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateGroupServlet</servlet-name>
+        <servlet-class>updateServlets.UpdateGroupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateGroupServlet</servlet-name>
+        <url-pattern>/updateGroupServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateStudentServlet</servlet-name>
+        <servlet-class>updateServlets.UpdateStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateStudentServlet</servlet-name>
+        <url-pattern>/updateStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteGroupServlet</servlet-name>
+        <servlet-class>deleteServlets.DeleteGroupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteGroupServlet</servlet-name>
+        <url-pattern>/deleteGroupServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>deleteStudentServlet</servlet-name>
+    <servlet-class>deleteServlets.DeleteStudentServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>deleteStudentServlet</servlet-name>
+        <url-pattern>/deleteStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateFinishGroupServlet</servlet-name>
+        <servlet-class>updateServlets.UpdateFinishGroupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateFinishGroupServlet</servlet-name>
+        <url-pattern>/updateFinishGroupServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateFinishStudentServlet</servlet-name>
+        <servlet-class>updateServlets.UpdateFinishStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateFinishStudentServlet</servlet-name>
+        <url-pattern>/updateFinishStudentServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
